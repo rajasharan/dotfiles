@@ -1,0 +1,17 @@
+hardstatus alwayslastline
+#hardstatus string "%{= g} %{= w}%-Lw%{=r}%n%f* %t%{-}%+LW"
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+
+defscrollback 5000
+ 
+bindkey "^x" remove
+bind x remove
+bind l focus right
+bind h focus left
+bind V version
+bind v split -v
+bind q only
+
+bind + resize +10
+bind - resize -10
+bind = resize =

@@ -1,0 +1,17 @@
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	name = Raja Sharan Mamidala
+	email = rajasharan@gmail.com
+[alias]
+    dsf = "!f() { git diff --color $@ | diff-so-fancy | less --tabs=4; }; f"
+    st = status
+    f = fetch --all
+    co = checkout
+    d = "!f() { git dsf $@; }; f"
+[core]
+	editor = /usr/local/bin/vim
+[push]
+	default = simple

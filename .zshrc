@@ -12,7 +12,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(ip os_icon time vi_mode)
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git docker vi-mode npm nvm screen zsh-autosuggestions)
+plugins=(git docker vi-mode npm zsh-autosuggestions)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh

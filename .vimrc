@@ -40,6 +40,7 @@ Plug 'junegunn/vim-xmark'               " ( :Xmark, :Xmark! )
 Plug 'junegunn/vim-easy-align'          " ( :EasyAlign =, gaip=, vipga= )
 Plug 'majutsushi/tagbar'                " ( ,t )
 Plug 'ElmCast/elm-vim'                  " ( ,r ,m ,b ,e ,d ,o )
+Plug 'ktonga/vim-follow-my-lead'        " ( ,fml )
 " Plug 'godlygeek/tabular'                  " ( :Tab / = )
 " Plug 'JamshedVesuna/vim-markdown-preview' " ( C-m generates /tmp/vim-...-preview.html )
 " Plug 'SirVer/ultisnips'                   " ( C-f C-b )
@@ -156,6 +157,7 @@ let g:hardtime_default_on = 0
 let g:bufferline_echo = 0
 let g:dwm_version = 0
 let g:limelight_conceal_ctermfg = 0
+let g:fml_all_sources = 1
 
 let g:elm_setup_keybindings = 0
 au FileType elm nmap <leader>m <Plug>(elm-make)

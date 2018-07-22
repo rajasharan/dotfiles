@@ -116,6 +116,9 @@ nnoremap <leader>d <C-d>
 nnoremap <leader>u <C-u>
 nnoremap <silent> <Leader>t :TagbarToggle<CR>
 
+" (follow mode) http://vim.wikia.com/wiki/View_text_file_in_two_columns
+noremap <silent> <Leader>vs :<C-u>let @z=&so<CR>:set so=0 noscb<CR>:bo vs<CR>Ljzt:setl scb<CR><C-w>p:setl scb<CR>:let &so=@z<CR>
+
 autocmd FileType ruby compiler ruby
 
 augroup filetype_html

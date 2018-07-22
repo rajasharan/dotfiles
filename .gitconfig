@@ -11,6 +11,7 @@
     f = fetch --all
     co = checkout
     d = "!f() { git dsf $@; }; f"
+    l = "!f() { git log $@ | vim - -R; }; f"
 [core]
 	editor = /usr/local/bin/vim
 [push]

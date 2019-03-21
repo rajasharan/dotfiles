@@ -6,14 +6,13 @@ export TERM="xterm-256color"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(ip os_icon time vi_mode)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(os_icon)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(ip status time vi_mode)
+POWERLEVEL9K_TIME_FORMAT="%D{%A %h %d [%l:%M %p]}"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git docker vi-mode npm zsh-autosuggestions)
+HYPHEN_INSENSITIVE="true"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
 
-# User configuration
+plugins=(git vi-mode mvn docker aws zsh-autosuggestions zsh-completions)
+autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
-source ~/.bashrc

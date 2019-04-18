@@ -1,0 +1,5 @@
+alias ll="ls -altr"
+alias lh="ls -altrh"
+alias cpu="ps axc -o cmd,%mem,%cpu --sort=-%cpu"
+alias mem="ps axc -o cmd,%mem,%cpu --sort=-%mem"
+alias watch="watch -n 0.5 -d "

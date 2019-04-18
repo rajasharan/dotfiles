@@ -1,18 +1,20 @@
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
 [user]
 	name = Raja Sharan Mamidala
 	email = rajasharan@gmail.com
-[alias]
-    dsf = "!f() { git diff --color $@ | diff-so-fancy | less --tabs=4; }; f"
-    st = status
-    f = fetch --all
-    co = checkout
-    d = "!f() { git dsf $@; }; f"
-    l = "!f() { git log $@ | vim - -R; }; f"
 [core]
-	editor = /usr/local/bin/vim
-[push]
-	default = simple
+	editor = /home/linuxbrew/.linuxbrew/bin/vim
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green
+	whitespace = red reverse

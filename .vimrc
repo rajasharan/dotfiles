@@ -76,11 +76,11 @@ set encoding=utf-8
 " let g:airline_theme = "dark"
 " let g:airline#extensions#tabline#enabled = 1
 
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 
 " colorscheme default
-" hi Search ctermbg=111
+hi Search ctermbg=LightYellow
 
 set wildignore+=*/node_modules/*,*/bower_components/*,*.swp,*.zip,*/dist/*,*/elm-stuff/*
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
@@ -118,6 +118,12 @@ nnoremap <silent> <Leader>t :TagbarToggle<CR>
 
 " (follow mode) http://vim.wikia.com/wiki/View_text_file_in_two_columns
 noremap <silent> <Leader>vs :<C-u>let @z=&so<CR>:set so=0 noscb<CR>:bo vs<CR>Ljzt:setl scb<CR><C-w>p:setl scb<CR>:let &so=@z<CR>
+
+" fold matching parens
+nnoremap <leader>z 0V$%zf
+
+" yank matching parens
+nnoremap <leader>y 0V$%y
 
 autocmd FileType ruby compiler ruby
 

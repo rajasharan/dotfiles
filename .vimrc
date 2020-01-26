@@ -41,6 +41,7 @@ Plug 'junegunn/vim-easy-align'          " ( :EasyAlign =, gaip=, vipga= )
 Plug 'majutsushi/tagbar'                " ( ,t )
 Plug 'ElmCast/elm-vim'                  " ( ,r ,m ,b ,e ,d ,o )
 Plug 'ktonga/vim-follow-my-lead'        " ( ,fml )
+Plug 'easymotion/vim-easymotion'        " ( ,,w ,,f ,,b ,,s )
 " Plug 'godlygeek/tabular'                  " ( :Tab / = )
 " Plug 'JamshedVesuna/vim-markdown-preview' " ( C-m generates /tmp/vim-...-preview.html )
 " Plug 'SirVer/ultisnips'                   " ( C-f C-b )
@@ -108,7 +109,6 @@ nnoremap N Nzz
 
 nnoremap <leader>ev :vs $MYVIMRC<CR>
 nnoremap <leader>w :w<CR>
-nnoremap <leader>ww :w<CR>
 nnoremap <leader>s :source $MYVIMRC<CR>
 nnoremap <leader>ss :source $MYVIMRC<CR>
 

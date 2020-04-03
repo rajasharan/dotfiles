@@ -1,6 +1,6 @@
 hardstatus alwayslastline
 #hardstatus string "%{= g} %{= w}%-Lw%{=r}%n%f* %t%{-}%+LW"
-hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%M %d %{W}%C%A%{g}]'
 
 defscrollback 5000
  

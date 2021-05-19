@@ -7,6 +7,10 @@ alias gls="git ls-files --full-name"
 alias sudo="sudo -E env \"PATH=$PATH\""
 alias ports="sudo lsof -PiTCP -sTCP:LISTEN"
 alias dua="du -a"
+alias mv="mv -iv"
+alias vram="glxinfo | ag 'device|memory'"
+alias meminfo="sudo dmidecode --type 17"
+alias memspeed="sudo lshw -short -C memory"
 
 ptop() {
     htop --pid=$(pgrep -i "$@" | paste -sd, -)
